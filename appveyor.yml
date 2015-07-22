@@ -21,7 +21,7 @@ install:
 
 build_script:
     - 'setup_opam.cmd'
-    - '%CYG_ROOT%/bin/bash -lc "opam init -y -a"'
+    - '%CYG_ROOT%/bin/bash -lc "opam init -y -a https://github.com/Chris00/opam-repository"'
     - '%CYG_ROOT%/bin/bash -lc "opam install -y ocamlfind"'
     - '%CYG_ROOT%/bin/bash -lc "opam install -y -v ocamlmod"'
 
